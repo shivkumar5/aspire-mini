@@ -183,7 +183,25 @@
 }
 
 .btn--available-balance{
-  background:#01D167;border-radius:4px;border:transparent;height:24px;width:40px;margin-right:12px;color:#FFFFFF
+  background:#01D167;
+  border-radius:4px;
+  border:transparent;
+  height:24px;
+  width:40px;
+  margin-right:12px;
+  color:#FFFFFF
+}
+
+.btn-pay{
+  background:#01D167;
+  border-radius:4px;
+  border:transparent;
+  padding: 8px;
+  color:#FFFFFF;
+  cursor: pointer;
+  &:disabled {
+    background:#9de4be;
+  }
 }
 
 .available-balance{
@@ -243,4 +261,75 @@
   border:1px solid #DDFFEC;
   border-radius:8px;
   padding:16px;
+}
+
+.loan-apply {
+  background: #0C365A;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.form-container{
+  max-width: 700px;
+  padding: 32px;
+  background: #EDF3FF;
+  margin: 12px auto;
+  gap:20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #9cbad3;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 26px;
+  color: #FFFFFF;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.form--input{
+  height: 32px;
+  margin: auto;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #9cbad3;
+  min-width: 230px;
+}
+
+input:focus{
+  outline: none;
+  border: 1px solid #0C365A;
+}
+
+.btn-submit{
+  margin: auto;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #9cbad3;
+  background: #0C365A;
+  color: #ffffff;
+}
+
+.loan-details {
+  display: flex;
+  flex-direction: column;
+  h1{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    margin: 0;
+  }
+  p{
+    margin: 12px 0;
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
+
+.btn-pay--emi {
+  margin: 12px auto;
 }

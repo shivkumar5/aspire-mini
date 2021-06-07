@@ -1,5 +1,5 @@
 <style lang="sass">
-@import "./styles/utility.scss";
+  @import "./styles/utility.scss";
 </style>
 <template>
   <div id="app">
