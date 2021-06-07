@@ -1,24 +1,23 @@
 # aspire-mini
 
 ## Project setup
+
+Clone the project using
+
+```
+git clone git@github.com:shivkumar5/aspire-mini.git
+```
+the install dependecies using
+
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+start server 
+
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Now to see the mobile view navigate to http://localhost:8081/#/mobile and change user agent to mobile.
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
