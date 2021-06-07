@@ -3,7 +3,7 @@
 </style>
 <template>
     <div class="loan-apply">
-      <img src="../assets/Logo.png" alt="" @click="$router.push('/')">
+      <img src="@/assets/Logo.png" alt="" @click="$router.push('/')">
 
       <div class="form-container m--t--10">
         <div class="loan-details" v-if="loanDetails && loanDetails.loanNumber">

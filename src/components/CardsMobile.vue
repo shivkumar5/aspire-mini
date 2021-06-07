@@ -16,23 +16,23 @@
         "
       >
         <div>
-          <img src="../assets/Logo-mobile-bottom.png" alt="" />
+          <img src="@/assets/Logo-mobile-bottom.png" alt="" />
           <p style="font-size: 9px; color: #dddddd">Home</p>
         </div>
         <div>
-          <img src="../assets/Card.png" alt="" />
+          <img src="@/assets/Card.png" alt="" />
           <p class="fw--bold tc--g fs--sm">Cards</p>
         </div>
         <div>
-          <img src="../assets/Payments-mobile-bottom.png" alt="" />
+          <img src="@/assets/Payments-mobile-bottom.png" alt="" />
           <p style="font-size: 9px; color: #dddddd">Payments</p>
         </div>
         <div>
-          <img src="../assets/Credit-mobile-bottom.png" alt="" />
+          <img src="@/assets/Credit-mobile-bottom.png" alt="" />
           <p style="font-size: 9px; color: #dddddd">Credit</p>
         </div>
         <div>
-          <img src="../assets/Account-mobile-bottom.png" alt="" />
+          <img src="@/assets/Account-mobile-bottom.png" alt="" />
           <p style="font-size: 9px; color: #dddddd">Profile</p>
         </div>
       </div>
@@ -49,7 +49,7 @@
       "
     >
       <div class="d--fl width--100 jc--fe">
-        <img src="../assets/Logo-mobile.png" alt="" class="as--fe" />
+        <img src="@/assets/Logo-mobile.png" alt="" class="as--fe" />
       </div>
       <div class="d--fl jc--sb ai--c">
         <div>
@@ -81,7 +81,7 @@
           "
         >
           <img
-            src="../assets/box-mobile.png"
+            src="@/assets/box-mobile.png"
             alt=""
             style="width: 16px; height: 16px; margin-right: 8px"
           />
@@ -115,7 +115,7 @@
           "
         >
           <img
-            src="../assets/remove_red_eye-24px.png"
+            src="@/assets/remove_red_eye-24px.png"
             alt=""
             class="m--r--2"
             style="height: 16px"

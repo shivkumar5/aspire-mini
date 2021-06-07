@@ -15,7 +15,7 @@
           </div>
           <div>
             <button class="btn--new-card">
-              <img src="../assets/box.png" alt="" class="icon--new-card">
+              <img src="@/assets/box.png" alt="" class="icon--new-card">
               <p>New card</p> 
               </button>
           </div>
@@ -29,7 +29,7 @@
           
           <div class="p--h--10 width--100">
             <div  class="d--fl jc--fe m--b--2 fw--bold">
-              <img src="../assets/remove_red_eye-24px.png" alt="" class="m--r--2">
+              <img src="@/assets/remove_red_eye-24px.png" alt="" class="m--r--2">
               <p class="tc--g">Show card number</p>
             </div>
             <DebitCard />

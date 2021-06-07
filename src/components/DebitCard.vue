@@ -1,6 +1,6 @@
 <template>
   <div class="debit-card">
-    <img src="../assets/Logo-white.png" class="as--fe" alt="aspire-logo">
+    <img src="@/assets/Logo-white.png" class="as--fe" alt="aspire-logo">
     <p class="debit-card--user-name ">Mark Henry</p>
     <div class="debit-card--number">
       <div class="debit-card--dot-container" v-for="i in 3" :key="i"> 
@@ -13,7 +13,7 @@
       <p>CVV: </p>
       <p class="debit-card--cvv">***</p>
     </div>
-    <img src="../assets/VisaLogo.png" alt="Visa" class="as--fe">
+    <img src="@/assets/VisaLogo.png" alt="Visa" class="as--fe">
   </div>
 </template>
 

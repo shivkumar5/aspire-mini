@@ -5,7 +5,7 @@
 <template>
   <div class="loan-apply">
     <div class="d--fl jc--sb">
-      <img src="../assets/Logo.png" alt="">
+      <img src="@/assets/Logo.png" alt="">
       <button @click="$router.push('/pay')" class="btn-pay">Pay Loan</button>
     </div>
     <h1 style="text-align:center">

@@ -1,7 +1,7 @@
 <template>
   <div class="side-nav"> 
       <div>
-        <img src="../assets/Logo.png" alt="">
+        <img src="@/assets/Logo.png" alt="">
         <p class="side-nav--logo-text">Trusted way of banking for 3,000+ SMEs and startups in Singapore</p>
       </div>
       <div style="display:flex;align-items: center;margin-bottom:60px">
