@@ -1,0 +1,101 @@
+@import './base.scss';
+
+.fw--bold {
+  font-weight: bold;
+}
+
+.fw--semi-bold {
+  font-weight: 600;
+}
+
+.d--fl {
+  display: flex;
+}
+
+.fd--c{
+  flex-direction: column;
+}
+
+.jc--sb {
+  justify-content: space-between;
+}
+
+.jc--fe {
+  justify-content: flex-end;
+}
+
+.ai--c {
+  align-items: center;
+}
+
+.as--fe {
+  align-self: flex-end;
+}
+
+.tc--w {
+  color: #FFFFFF;
+}
+
+.tc--g {
+  color: #01D167;
+}
+
+.tc--b {
+  color: #222222;
+}
+
+// Padding and Margin
+
+$space-amounts: (0, 1, 2, 3, 4, 5, 6, 7,8,9,10 );
+$sides: (top, bottom, left, right);
+
+@each $space in $space-amounts {
+  @each $side in $sides {
+    .m--#{$space} {
+      margin: $spacing-unit * $space !important;
+    }
+    .m--#{str-slice($side, 0, 1)}--#{$space} {
+      margin-#{$side}: $spacing-unit * $space !important;
+    }
+    .p--#{$space} {
+      padding: $spacing-unit * $space !important;
+    }
+    .p--#{str-slice($side, 0, 1)}--#{$space} {
+      padding-#{$side}: $spacing-unit * $space !important;
+    }
+  }
+}
+
+// left and right margin, padding
+
+@each $space in $space-amounts {
+  .m--h--#{$space} {
+    margin-left: $spacing-unit * $space !important;
+    margin-right: $spacing-unit * $space !important;
+  }
+  .p--h--#{$space} {
+    padding-left: $spacing-unit * $space !important;
+    padding-right: $spacing-unit * $space !important;
+  }
+}
+
+// top and bottom margin, padding
+
+@each $space in $space-amounts {
+  .m--v--#{$space} {
+    margin-top: $spacing-unit * $space !important;
+    margin-bottom: $spacing-unit * $space !important;
+  }
+  .p--v--#{$space} {
+    padding-top: $spacing-unit * $space !important;
+    padding-bottom: $spacing-unit * $space !important;
+  }
+}
+
+.width--100 {
+  width: 100%;
+}
+
+.fs--sm {
+  font-size: 9px;
+}

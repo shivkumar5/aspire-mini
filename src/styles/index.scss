@@ -1,0 +1,246 @@
+@import './base.scss';
+
+.cards-desktop{
+  display: flex;
+} 
+
+.card-details-card{
+  padding:24px;
+  background:#F5F9FF;
+  border-radius:8px;
+  box-shadow:0 0 8px #0000000A;
+  display:flex;
+  justify-content:space-between
+}
+
+.side-nav {
+  width: 340px;
+  background: #0C365A;
+  min-height: 100vh;
+  padding: 48px;
+}
+
+.side-nav--logo-text {
+  color:rgba(255, 255, 255, 0.3);
+  margin:20px 0 80px
+}
+
+.content{
+  padding:60px;
+  width: 100%;
+}
+
+.debit-card{
+  background:rgba(1, 209, 103, 1);
+  border-radius:8px;
+  color:#FFFFFF;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  padding:28px;
+  @media (max-width:600px) {
+    padding: 24px !important;
+    padding-right: 32px !important;
+  }
+}
+
+
+
+.debit-card--user-name {
+  font-size:24px;
+  font-weight:bold;
+  margin-top:28px
+}
+
+.debit-card--number {
+  display:flex;
+  gap:28px;
+  margin-top:32px;
+  align-items:center;
+  @media (max-width:600px) {
+    gap: 24px !important;
+  }
+}
+
+.debit-card--expiry {
+  display:flex;
+  margin-top:20px;
+  font-size:13px;
+  align-items:center;
+}
+
+.debit-card--cvv {
+  font-size:24px;
+  font-weight:bold;
+  margin-left:4px;
+}
+
+.debit-card--dot-container{
+  display: flex;
+  gap: $spacing-unit*1.5;
+}
+
+.debit-card--dot {
+  height: 9px;
+  width: 9px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.payment-actions{
+  background:#EDF3FF;
+  border-radius:16px;
+  color:#FFFFFF;
+  display:flex;
+  padding:20px 28px;
+  justify-content: space-between;
+  text-align: center;
+  margin-top:32px;
+  color:#0C365A;
+  font-size:13px
+}
+
+.recent-transactions {
+  border:1px solid #F0F0F0;
+  border-radius:8px;
+}
+
+.recent-transactions--card {
+  background:#F5F9FF;
+  box-shadow:0 0 8px #0000000A;
+  padding:24px
+}
+
+.recent-transactions--transaction {
+  display:flex;
+  justify-content:space-between;
+  padding:24px 0;
+  border-bottom:1px solid #F0F0F0;
+  &:last-child{
+    border-bottom: none;
+  }
+}
+
+.recent-transactions--transaction--image-container {
+  width:48px;
+  height:48px;
+  background:#009DFF1A;
+  border-radius:50%;
+  margin-right:12px;
+}
+.recent-transactions--transaction--image{
+  width:16px;
+  height:16px;
+  margin: 16px;
+}
+
+.recent-transactions--transaction--action-icon{
+  background:#325BAF;
+  width:24px;
+  height:20px;
+  border-radius:8px;
+  margin-right:8px;
+  padding-left:7px
+}
+.recent-transactions--transaction--date {
+  color:#AAAAAA;
+  font-size:13px
+}
+
+.arrow-up {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+}
+
+.next {
+  margin-left:8px;
+  width:6px;
+  height:12px;
+}
+
+
+.cards-mobile {
+  background: #0C365A;
+}
+
+.card-scroller{
+  margin-top:16px;
+  display:flex;
+  gap:8px;
+  justify-content:center;
+}
+
+.card-scroller--content{
+  background:#01D167;
+  width:16px;
+  height:8px;
+  border-radius:8px;
+  &:not(:first-child){
+    opacity: 30%;
+    width: 8px;
+  }
+}
+
+.btn--available-balance{
+  background:#01D167;border-radius:4px;border:transparent;height:24px;width:40px;margin-right:12px;color:#FFFFFF
+}
+
+.available-balance{
+  font-size:26px;
+  font-weight:800
+}
+
+.btn--new-card{
+  background:#325BAF;
+  width:109px;
+  height:35px;
+  border:transparent;
+  border-radius:4px;
+  color:#FFFFFF;
+  font-weight:bold;
+  display:flex;
+  align-items:center;
+  padding:8px 12px;
+}
+
+.icon--new-card {
+  width:16px;
+  height:16px;
+  margin-right:8px;
+}
+
+.all-card-container{
+  margin-top:36px;
+  display:flex;
+  gap:32px;
+}
+
+.my-debit-card{
+  color:#222222;
+  font-weight:bold;
+  border-bottom: 2px solid #23CEFD;
+  padding-bottom:4px;
+}
+
+.all-company-card {
+  color:#222222;
+  opacity:30%;
+}
+.layout-container{
+  padding:32px 40px;
+  border-radius:8px;
+  margin-top:16px;
+  border:1px solid #FCFCFC;
+  box-shadow:0px 2px 12px #00000014;
+  display:flex;justify-content:space-between;
+}
+
+.view-all-card-transaction{
+  text-align:center;
+  color:#01D167;
+  background:#EDFFF5;
+  border:1px solid #DDFFEC;
+  border-radius:8px;
+  padding:16px;
+}
