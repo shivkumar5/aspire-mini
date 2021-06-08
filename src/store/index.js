@@ -34,7 +34,7 @@ const store = new Vuex.Store({
       console.log(loan)
       commit('UpdateLoanDetails',{index, loan})
     }, 
-    applyForLoan: ({state,commit}, {loanDetail}) => {
+    applyForLoan: async ({state,commit}, {loanDetail}) => {
       const loanNumber = `LN${state.loanDetails.length+1}`;
       const loan = {
         username:loanDetail.username,
@@ -44,7 +44,8 @@ const store = new Vuex.Store({
         remainingTerms:loanDetail.loanTerms,
         emi: loanDetail.loanAmount/loanDetail.loanTerms
       };
-      commit('ApplyLoan', loan)
+      await commit('ApplyLoan', loan);
+      return loanNumber;
     },
     getLoanDetails: ({state}, {loanNumber}) => {
       return state.loanDetails.find(loan => loan.loanNumber === loanNumber)

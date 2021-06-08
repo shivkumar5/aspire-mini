@@ -189,7 +189,10 @@
   height:24px;
   width:40px;
   margin-right:12px;
-  color:#FFFFFF
+  color:#FFFFFF;
+  @media (max-width:600px) {
+    
+  }
 }
 
 .btn-pay{
@@ -232,6 +235,10 @@
   margin-top:36px;
   display:flex;
   gap:32px;
+
+  @media (max-width: 600px) {
+    margin: 24px 0; 
+  }
 }
 
 .my-debit-card{
@@ -239,11 +246,17 @@
   font-weight:bold;
   border-bottom: 2px solid #23CEFD;
   padding-bottom:4px;
+  @media (max-width: 600px) {
+    color: #ffffff;
+  }
 }
 
 .all-company-card {
   color:#222222;
   opacity:30%;
+  @media (max-width: 600px) {
+    color: #ffffff;
+  }
 }
 .layout-container{
   padding:32px 40px;
@@ -332,4 +345,79 @@ input:focus{
 
 .btn-pay--emi {
   margin: 12px auto;
+}
+
+.cards-mobile--bottom-nav {
+  position: fixed;
+  z-index: 1000;
+  bottom: 0; 
+  right: 0; 
+  left: 0
+}
+
+.cards-mobile--bottom-nav-container {
+  background: #ffffff;
+  height: 56px;
+  box-shadow: 0 -3px 6px #00000014;
+  padding: 8px 32px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards-mobile--bottom-nav--item {
+  font-size: 9px; 
+  color: #dddddd
+}
+
+.cards-mobile--fixed-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #0c365a;
+  padding: 24px;
+  padding-bottom: 32px;
+}
+
+.card-mobile--new-card{
+  color: #23cefd;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+}
+
+.cards-mobile--show-card {
+  height: 40px;
+  background: #ffffff;
+  margin-bottom: -16px;
+  border-radius: 6px;
+  padding: 4px 8px;
+  z-index: -1;
+}
+
+.cards-mobile--show-card--icon {
+  height: 16px;
+} 
+
+.cards-mobile--secondary-card{
+  align-self: center;
+  right: -8px;
+  position: absolute;
+  height: 220px;
+  width: 20px;
+  border-radius: 12px;
+  background: #536dff;
+}
+
+.cards-mobile--bottom-content{
+  position: relative;
+  top: 450px
+}
+
+.cards-mobile--bottom-content--item{
+  background: #ffffff; 
+  margin-top: -16px;
+  padding-top: 24px;
 }

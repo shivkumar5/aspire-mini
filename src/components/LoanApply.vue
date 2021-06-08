@@ -36,9 +36,10 @@ export default{
   methods:{
     ...mapActions(['applyForLoan']),
     async applyLoan() {
-      await this.applyForLoan({
+      const loanNumber = await this.applyForLoan({
        loanDetail:this.loanDetails
       });
+      confirm(`Your loan application is being processed. Your loan number is ${loanNumber}`)
       this.$router.push('/pay')
     }
   }

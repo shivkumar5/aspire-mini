@@ -1,23 +1,14 @@
 <style lang="sass">
-@import './../styles/index.scss'
+@import '../styles/index.scss'
 </style>
 
 <template>
   <div>
-    <div style="position: fixed; z-index: 1000; bottom: 0; right: 0; left: 0">
-      <div
-        class="d--fl jc--sb"
-        style="
-          background: #ffffff;
-          height: 56px;
-          box-shadow: 0 -3px 6px #00000014;
-          padding: 8px 32px;
-          text-align: center;
-        "
-      >
+    <div class="cards-mobile--bottom-nav">
+      <div class="cards-mobile--bottom-nav-container">
         <div>
-          <img src="@/assets/Logo-mobile-bottom.png" alt="" />
-          <p style="font-size: 9px; color: #dddddd">Home</p>
+          <img src="@/assets/Logo-mobile-bottom.png" alt=""/>
+          <p class="cards-mobile--bottom-nav--item">Home</p>
         </div>
         <div>
           <img src="@/assets/Card.png" alt="" />
@@ -25,124 +16,69 @@
         </div>
         <div>
           <img src="@/assets/Payments-mobile-bottom.png" alt="" />
-          <p style="font-size: 9px; color: #dddddd">Payments</p>
+          <p class="cards-mobile--bottom-nav--item">Payments</p>
         </div>
         <div>
           <img src="@/assets/Credit-mobile-bottom.png" alt="" />
-          <p style="font-size: 9px; color: #dddddd">Credit</p>
+          <p class="cards-mobile--bottom-nav--item">Credit</p>
         </div>
         <div>
           <img src="@/assets/Account-mobile-bottom.png" alt="" />
-          <p style="font-size: 9px; color: #dddddd">Profile</p>
+          <p class="cards-mobile--bottom-nav--item">Profile</p>
         </div>
       </div>
     </div>
-    <div
-      style="
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        background: #0c365a;
-        padding: 24px;
-        padding-bottom: 32px;
-      "
-    >
+    <div class="cards-mobile--fixed-content" >
       <div class="d--fl width--100 jc--fe">
-        <img src="@/assets/Logo-mobile.png" alt="" class="as--fe" />
+        <img src="@/assets/Logo-mobile.png" alt="" class="as--fe"  @click="$router.push('/')" />
       </div>
       <div class="d--fl jc--sb ai--c">
         <div>
           <p class="m--b--2 tc--w">Available balance</p>
           <div class="d--fl ai--c">
-            <button
-              style="
-                background: #01d167;
-                border-radius: 4px;
-                border: transparent;
-                height: 24px;
-                width: 40px;
-                margin-right: 12px;
-                color: #ffffff;
-              "
-            >
+            <button class="btn--available-balance">
               S$
             </button>
-            <p style="font-size: 26px; font-weight: 800" class="tc--w">3,000</p>
+            <p class="tc--w available-balance">3,000</p>
           </div>
         </div>
-        <div
-          style="
-            color: #23cefd;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            padding: 8px 12px;
-          "
-        >
+        <div class="card-mobile--new-card" >
           <img
             src="@/assets/box-mobile.png"
             alt=""
-            style="width: 16px; height: 16px; margin-right: 8px"
+            class="icon--new-card"
           />
           <p>New card</p>
         </div>
       </div>
-      <div style="margin: 24px 0; display: flex; gap: 32px; font-size: 14px">
-        <p
-          style="
-            color: #ffffff;
-            font-weight: bold;
-            border-bottom: 2px solid #23cefd;
-            padding-bottom: 4px;
-          "
-        >
+      <div class="all-card-container">
+        <p class="my-debit-card">
           My debit cards
         </p>
-        <p style="color: #ffffff; opacity: 30%">All company cards</p>
+        <p class="all-company-card">All company cards</p>
       </div>
 
       <div class="d--fl jc--fe fw--bold">
-        <div
-          class="d--fl"
-          style="
-            height: 40px;
-            background: #ffffff;
-            margin-bottom: -16px;
-            border-radius: 6px;
-            padding: 4px 8px;
-            z-index: -1;
-          "
-        >
+        <div class="d--fl cards-mobile--show-card">
           <img
             src="@/assets/remove_red_eye-24px.png"
             alt=""
-            class="m--r--2"
-            style="height: 16px"
-          />
+            class="m--r--2 cards-mobile--show-card--icon"/>
           <p class="tc--g">Show card number</p>
         </div>
       </div>
       <div class="d--fl">
         <DebitCard />
         <div
-          style="
-            align-self: center;
-            right: -8px;
-            position: absolute;
-            height: 220px;
-            width: 20px;
-            border-radius: 12px;
-            background: #536dff;
-          "
+          class="cards-mobile--secondary-card"
         ></div>
       </div>
       <CardScroller class="m--b--4" />
     </div>
-    <div style="position: relative; top: 450px">
+    <div class="cards-mobile--bottom-content">
       <PaymentActions />
-      <div style="background: #ffffff; margin-top: -16px; padding-top: 24px">
-        <CardDetailsCard style="margin-bottom: 24px" />
+      <div class="cards-mobile--bottom-content--item">
+        <CardDetailsCard class="m--b--6" />
         <RecentTransactionsCard />
       </div>
     </div>
