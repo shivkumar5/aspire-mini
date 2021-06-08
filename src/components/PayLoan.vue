@@ -12,8 +12,8 @@
           <p>Loan Number : {{loanDetails.loanNumber}}</p>
           <p>Total Loan Amount : {{loanDetails.totalLoanAmount}}</p>
           <p>Remaining Loan Amount : {{loanDetails.remainingLoanAmount}}</p>
-          <p>Remaining Terms : {{loanDetails.remainingTerms}}</p>
-          <p>EMI : {{loanDetails.emi}}</p>
+          <p>Remaining Terms : {{loanDetails.remainingTerms}} weeks</p>
+          <p>EMI : {{loanDetails.emi}} rupees per week</p>
           <button type="button" :disabled="!loanDetails.remainingLoanAmount || !loanDetails.remainingTerms" class="btn-pay btn-pay--emi" @click="payEmiAmount">Pay EMI</button>
         </div>
         <div class="d--fl fd--c">
