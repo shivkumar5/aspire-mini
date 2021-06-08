@@ -5,10 +5,10 @@
 } 
 
 .card-details-card{
-  padding:24px;
+  padding: $spacing-unit*6;
   background:#F5F9FF;
-  border-radius:8px;
-  box-shadow:0 0 8px #0000000A;
+  border-radius: $spacing-unit*2;
+  box-shadow:0 0 $spacing-unit*2 #0000000A;
   display:flex;
   justify-content:space-between
 }
@@ -17,30 +17,30 @@
   width: 340px;
   background: #0C365A;
   min-height: 100vh;
-  padding: 48px;
+  padding: $spacing-unit*12;
 }
 
 .side-nav--logo-text {
   color:rgba(255, 255, 255, 0.3);
-  margin:20px 0 80px
+  margin:$spacing-unit*5 0 $spacing-unit*16;
 }
 
 .content{
-  padding:60px;
+  padding: $spacing-unit*12;
   width: 100%;
 }
 
 .debit-card{
   background:rgba(1, 209, 103, 1);
   border-radius:8px;
-  color:#FFFFFF;
+  color:$color-white;
   width: 100%;
   display:flex;
   flex-direction: column;
   padding:28px;
   @media (max-width:600px) {
-    padding: 24px !important;
-    padding-right: 32px !important;
+    padding: $spacing-unit*6 !important;
+    padding-right: $spacing-unit*8 !important;
   }
 }
 
@@ -49,30 +49,30 @@
 .debit-card--user-name {
   font-size:24px;
   font-weight:bold;
-  margin-top:28px
+  margin-top:$spacing-unit*7;
 }
 
 .debit-card--number {
-  display:flex;
-  gap:28px;
-  margin-top:32px;
-  align-items:center;
+  display: flex;
+  gap: $spacing-unit*7;
+  margin-top: $spacing-unit*8;
+  align-items: center;
   @media (max-width:600px) {
-    gap: 24px !important;
+    gap: $spacing-unit*6 !important;
   }
 }
 
 .debit-card--expiry {
   display:flex;
-  margin-top:20px;
+  margin-top: $spacing-unit*5;
   font-size:13px;
   align-items:center;
 }
 
 .debit-card--cvv {
-  font-size:24px;
+  font-size: $spacing-unit*6;
   font-weight:bold;
-  margin-left:4px;
+  margin-left: $spacing-unit*1;
 }
 
 .debit-card--dot-container{
@@ -83,39 +83,39 @@
 .debit-card--dot {
   height: 9px;
   width: 9px;
-  background-color: #FFFFFF;
+  background-color: $color-white;
   border-radius: 50%;
   display: inline-block;
 }
 
 .payment-actions{
   background:#EDF3FF;
-  border-radius:16px;
-  color:#FFFFFF;
+  border-radius: $spacing-unit*4;
+  color:$color-white;
   display:flex;
-  padding:20px 28px;
+  padding:$spacing-unit*5 $spacing-unit*7;
   justify-content: space-between;
   text-align: center;
-  margin-top:32px;
+  margin-top:$spacing-unit*8;
   color:#0C365A;
   font-size:13px
 }
 
 .recent-transactions {
   border:1px solid #F0F0F0;
-  border-radius:8px;
+  border-radius:$spacing-unit*2;
 }
 
 .recent-transactions--card {
   background:#F5F9FF;
-  box-shadow:0 0 8px #0000000A;
-  padding:24px
+  box-shadow:0 0 $spacing-unit*2 #0000000A;
+  padding:$spacing-unit*6;
 }
 
 .recent-transactions--transaction {
   display:flex;
   justify-content:space-between;
-  padding:24px 0;
+  padding:$spacing-unit*6 0;
   border-bottom:1px solid #F0F0F0;
   &:last-child{
     border-bottom: none;
@@ -123,24 +123,24 @@
 }
 
 .recent-transactions--transaction--image-container {
-  width:48px;
-  height:48px;
+  width:$spacing-unit*12;
+  height:$spacing-unit*12;
   background:#009DFF1A;
   border-radius:50%;
-  margin-right:12px;
+  margin-right:$spacing-unit*3;
 }
 .recent-transactions--transaction--image{
-  width:16px;
-  height:16px;
-  margin: 16px;
+  width:$spacing-unit*4;
+  height:$spacing-unit*4;
+  margin: $spacing-unit*4;
 }
 
 .recent-transactions--transaction--action-icon{
-  background:#325BAF;
-  width:24px;
-  height:20px;
-  border-radius:8px;
-  margin-right:8px;
+  background:$color-blue;
+  width:$spacing-unit*6;
+  height:$spacing-unit*6;
+  border-radius:$spacing-unit*2;
+  margin-right:$spacing-unit*2;
   padding-left:7px
 }
 .recent-transactions--transaction--date {
@@ -154,9 +154,9 @@
 }
 
 .next {
-  margin-left:8px;
-  width:6px;
-  height:12px;
+  margin-left:$spacing-unit*2;
+  width:$spacing-unit*1.5;
+  height:$spacing-unit*3;
 }
 
 
@@ -165,42 +165,39 @@
 }
 
 .card-scroller{
-  margin-top:16px;
+  margin-top:$spacing-unit*4;
   display:flex;
-  gap:8px;
+  gap:$spacing-unit*2;
   justify-content:center;
 }
 
 .card-scroller--content{
-  background:#01D167;
-  width:16px;
-  height:8px;
-  border-radius:8px;
+  background:$color-green;
+  width:$spacing-unit*4;
+  height:$spacing-unit*2;
+  border-radius:$spacing-unit*2;
   &:not(:first-child){
     opacity: 30%;
-    width: 8px;
+    width: $spacing-unit*2;
   }
 }
 
 .btn--available-balance{
-  background:#01D167;
-  border-radius:4px;
+  background:$color-green;
+  border-radius:$spacing-unit;
   border:transparent;
-  height:24px;
-  width:40px;
-  margin-right:12px;
-  color:#FFFFFF;
-  @media (max-width:600px) {
-    
-  }
+  height:$spacing-unit*6;
+  width:$spacing-unit*10;
+  margin-right:$spacing-unit*3;
+  color:$color-white;
 }
 
 .btn-pay{
-  background:#01D167;
-  border-radius:4px;
+  background:$color-green;
+  border-radius:$spacing-unit;
   border:transparent;
-  padding: 8px;
-  color:#FFFFFF;
+  padding: $spacing-unit*2;
+  color:$color-white;
   cursor: pointer;
   &:disabled {
     background:#9de4be;
@@ -213,55 +210,55 @@
 }
 
 .btn--new-card{
-  background:#325BAF;
+  background:$color-blue;
   width:109px;
   height:35px;
   border:transparent;
-  border-radius:4px;
-  color:#FFFFFF;
+  border-radius:$spacing-unit;
+  color:$color-white;
   font-weight:bold;
   display:flex;
   align-items:center;
-  padding:8px 12px;
+  padding:$spacing-unit*2 $spacing-unit*3;
 }
 
 .icon--new-card {
-  width:16px;
-  height:16px;
-  margin-right:8px;
+  width:$spacing-unit*4;
+  height:$spacing-unit*4;
+  margin-right:$spacing-unit*2;
 }
 
 .all-card-container{
-  margin-top:36px;
+  margin-top:$spacing-unit*9;
   display:flex;
-  gap:32px;
+  gap:$spacing-unit*8;
 
   @media (max-width: 600px) {
-    margin: 24px 0; 
+    margin: $spacing-unit*6 0; 
   }
 }
 
 .my-debit-card{
-  color:#222222;
+  color:$color-blue;
   font-weight:bold;
   border-bottom: 2px solid #23CEFD;
-  padding-bottom:4px;
+  padding-bottom:$spacing-unit;
   @media (max-width: 600px) {
-    color: #ffffff;
+    color: $color-white;
   }
 }
 
 .all-company-card {
-  color:#222222;
+  color:$color-black;
   opacity:30%;
   @media (max-width: 600px) {
-    color: #ffffff;
+    color: $color-white;
   }
 }
 .layout-container{
-  padding:32px 40px;
-  border-radius:8px;
-  margin-top:16px;
+  padding:$spacing-unit*8 $spacing-unit*10;
+  border-radius:$spacing-unit*2;
+  margin-top:$spacing-unit*4;
   border:1px solid #FCFCFC;
   box-shadow:0px 2px 12px #00000014;
   display:flex;justify-content:space-between;
@@ -269,44 +266,43 @@
 
 .view-all-card-transaction{
   text-align:center;
-  color:#01D167;
+  color:$color-green;
   background:#EDFFF5;
   border:1px solid #DDFFEC;
-  border-radius:8px;
-  padding:16px;
+  border-radius:$spacing-unit*2;
+  padding:$spacing-unit*4;
 }
 
 .loan-apply {
   background: #0C365A;
   min-height: 100vh;
-  padding: 40px;
+  padding: $spacing-unit*10;
+  h1 {
+    font-size: 26px;
+    color: $color-white;
+    margin-top: $spacing-unit*15;
+    margin-bottom: $spacing-unit*5;
+  }
 }
 
 .form-container{
   max-width: 700px;
-  padding: 32px;
+  padding: $spacing-unit*8;
   background: #EDF3FF;
-  margin: 12px auto;
-  gap:20px;
-  border-radius: 12px;
+  margin: $spacing-unit*3 auto;
+  gap:$spacing-unit*5;
+  border-radius: $spacing-unit*3;
   box-shadow: 0 2px 12px #9cbad3;
   display: flex;
   flex-direction: column;
 }
 
-h1 {
-  font-size: 26px;
-  color: #FFFFFF;
-  margin-top: 60px;
-  margin-bottom: 20px;
-}
-
 .form--input{
-  height: 32px;
+  height: $spacing-unit*8;
   margin: auto;
-  padding: 8px;
-  font-size: 16px;
-  border-radius: 4px;
+  padding: $spacing-unit*2;
+  font-size: $spacing-unit*4;
+  border-radius: $spacing-unit;
   border: 1px solid #9cbad3;
   min-width: 230px;
 }
@@ -318,12 +314,12 @@ input:focus{
 
 .btn-submit{
   margin: auto;
-  padding: 8px;
-  font-size: 16px;
-  border-radius: 4px;
+  padding: $spacing-unit*2;
+  font-size: $spacing-unit*4;
+  border-radius: $spacing-unit;
   border: 1px solid #9cbad3;
   background: #0C365A;
-  color: #ffffff;
+  color: $color-white;
 }
 
 .loan-details {
@@ -333,18 +329,18 @@ input:focus{
     font-size: 18px;
     font-weight: bold;
     text-align: center;
-    color: #000;
+    color: $color-black;
     margin: 0;
   }
   p{
-    margin: 12px 0;
+    margin: $spacing-unit*3 0;
     font-weight: 500;
-    font-size: 16px;
+    font-size: $spacing-unit*4;
   }
 }
 
 .btn-pay--emi {
-  margin: 12px auto;
+  margin: $spacing-unit*3 auto;
 }
 
 .cards-mobile--bottom-nav {
@@ -356,10 +352,10 @@ input:focus{
 }
 
 .cards-mobile--bottom-nav-container {
-  background: #ffffff;
+  background: $color-white;
   height: 56px;
   box-shadow: 0 -3px 6px #00000014;
-  padding: 8px 32px;
+  padding: $spacing-unit*2 $spacing-unit*8;
   text-align: center;
   display: flex;
   justify-content: space-between;
@@ -376,8 +372,8 @@ input:focus{
   left: 0;
   right: 0;
   background: #0c365a;
-  padding: 24px;
-  padding-bottom: 32px;
+  padding: $spacing-unit*6;
+  padding-bottom: $spacing-unit*8;
 }
 
 .card-mobile--new-card{
@@ -385,29 +381,29 @@ input:focus{
   font-weight: bold;
   display: flex;
   align-items: center;
-  padding: 8px 12px;
+  padding: $spacing-unit*2 $spacing-unit*3;
 }
 
 .cards-mobile--show-card {
-  height: 40px;
-  background: #ffffff;
-  margin-bottom: -16px;
+  height: $spacing-unit*10;
+  background: $color-white;
+  margin-bottom: -$spacing-unit*4;
   border-radius: 6px;
-  padding: 4px 8px;
+  padding: $spacing-unit $spacing-unit*2;
   z-index: -1;
 }
 
 .cards-mobile--show-card--icon {
-  height: 16px;
+  height: $spacing-unit*4;
 } 
 
 .cards-mobile--secondary-card{
   align-self: center;
-  right: -8px;
+  right: -$spacing-unit*2;
   position: absolute;
   height: 220px;
-  width: 20px;
-  border-radius: 12px;
+  width: $spacing-unit*5;
+  border-radius: $spacing-unit*3;
   background: #536dff;
 }
 
@@ -417,7 +413,7 @@ input:focus{
 }
 
 .cards-mobile--bottom-content--item{
-  background: #ffffff; 
-  margin-top: -16px;
-  padding-top: 24px;
+  background: $color-white; 
+  margin-top: -$spacing-unit*4;
+  padding-top: $spacing-unit*6;
 }
